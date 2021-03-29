@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<link rel="stylesheet" href="style.css">
+ <title>Election 2020</title>
+ <script src='Party.js'></script>
+ <script src='Electorate.js'></script>
+ <script src='Election.js'></script>
+ <script src='Controller.js'></script>
+</head>
+<body>
+<script>
+function main() {
+  var theElection = Controller.setup()
+  console.log(theElection)
+  console.log(theElection.toTable())
+  //document.body.innerHTML = theElection.toString()
+    document.body.innerHTML += theElection.toTable()
+  
+}
+window.onload = main
+</script>
+
+
+</body>
+</html>
